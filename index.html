@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>onboarding wizard</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="colorlib.com">
+
+		<!-- MATERIAL DESIGN ICONIC FONT -->
+		<link rel="stylesheet" href="fonts/material-design-iconic-font/css/material-design-iconic-font.css">
+
+		<!-- STYLE CSS -->
+		<link rel="stylesheet" href="css/style.css">
+		<style>
+			
+			.scrollable-section {
+				max-height: 300px;
+				overflow-y: auto; 
+			}
+		</style>
+		
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="image-holder">
+				<img src="images/form-wizard.png" alt="">
+			</div>
+            <form action="">
+            	<div id="wizard">
+            		<!-- SECTION 1 -->
+					
+	                <h4></h4>
+	                <section>
+	                   <div class="form-row">
+	                    	<label for="">
+	                    		Add a Product type
+	                    	</label>
+	                    	<input type="text" class="form-control">
+	                    </div>	
+						<div class="form-row">
+	                    	<label for="">
+	                    		Add a Product Category(optional)
+	                    	</label>
+	                    	<input type="text" class="form-control">
+	                    </div>
+	                    <div class="form-row">
+	                    	<label for="">
+	                    		Add a sub Category(optional)
+	                    	</label>
+	                    	<input type="text" class="form-control">
+	                    </div>
+	                </section>
+	                
+					<!-- SECTION 2 -->
+	                <h4></h4>
+	                <section class="scrollable-section">
+	                	<div class="form-row">
+	                    	<label for="">
+	                    		Product Name
+	                    	</label>
+	                    	<input type="text" class="form-control">
+	                    </div>
+						<div class="form-row">
+	                    	<label for="">
+	                    		Product Description
+	                    	</label>
+	                    	<input type="text" class="form-control">
+	                    </div>
+						<div class="form-row">
+							<label for="">
+								Add image(s)
+							</label>
+							<input type="file" class="form-control" accept="image/*">
+						</div>
+						<div class="checkbox">
+							<label>
+								<input type="checkbox"> this product has SKU code
+								<span class="checkmark"></span>
+							</label>
+						</div>
+						<div class="form-row">
+	                    	<label for="">
+	                    		
+	                    	</label>
+	                    	<input type="text" class="form-control">
+	                    </div>
+						<div class="checkbox">
+							<label>
+								<input type="checkbox">this product has HSN/SAC code 
+								<span class="checkmark"></span>
+							</label>
+						</div>
+						<div class="form-row">
+	                    	<label for="">
+	                    		
+	                    	</label>
+	                    	<input type="text" class="form-control">
+	                    </div>
+						<div class="checkbox">
+							<label>
+								<input type="checkbox"> price inclusive of GST
+								<span class="checkmark"></span>
+							</label>
+						</div>
+	                    <div class="form-row form-group">
+	                    	<div class="form-holder">
+	                    		<label for="">
+	                    		Net Price
+		                    	</label>
+	                    		<input type="text" class="form-control">
+	                    	</div>
+	                    	<div class="form-holder">
+	                    		<label for="">
+	                    		List Price
+		                    	</label>
+	                    		<input type="text" class="form-control">
+	                    	</div>
+	                    </div>	
+						<div class="form-row form-group">
+	                    	<div class="form-holder">
+	                    		<label for="">
+	                    		Discount percentage 
+		                    	</label>
+	                    		<input type="text" class="form-control">
+	                    	</div>
+	                    	<div class="form-holder">
+	                    		<label for="">
+	                    		GST rate
+		                    	</label>
+	                    		<input type="text" class="form-control">
+	                    	</div>
+	                    </div>	
+						<div class="form-row form-group">
+	                    	<div class="form-holder">
+	                    		<label for="">
+	                    		shipping charges(if any)
+		                    	</label>
+	                    		<input type="text" class="form-control">
+	                    	</div>
+	                    	<div class="form-holder">
+	                    		<label for="">
+	                    		Stock Level
+		                    	</label>
+	                    		<input type="text" class="form-control">
+	                    	</div>
+	                    </div>	
+	                    
+	                    
+	                </section>
+				</div>
+
+
+		<script src="js/jquery-3.3.1.min.js"></script>
+		
+		<!-- JQUERY STEP -->
+		<script src="js/jquery.steps.js"></script>
+
+		<script src="js/main.js"></script>
+</body>
+</html>
